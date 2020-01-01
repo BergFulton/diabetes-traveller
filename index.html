@@ -35,23 +35,156 @@
           on our GitHub page.
         </bold>
       </p>
-      <div class="dropdown-container">
-        <h2>Please select the language of the place you'll be travelling to</h2>
-        <select name="language-dropdown" id="language-list">
-          <option value="Spanish">Spanish</option>
-          <option value="French">French</option>
-          <option value="Italian">Italian</option>
-          <option value="German">German</option>
-          <option value="Russian">Russian</option>
-          <option value="Chinese-Mandarin">Chinese (Mandarin)</option>
-          <option value="Chinese-Cantonese">Chinese (Cantonese)</option>
-          <option value="Japanese">Japanese</option>
-          <option value="Portugese">Portugese</option>
-          <option value="Finnish">Finnish</option>
-          <option value="Swedish">Swedish</option>
-          <option value="Dutch">Dutch</option>
-        </select>
-
+    </div>
+    <div class="dropdown-container">
+      <h2>Please select the language of the place you'll be travelling to</h2>
+      <select name="language-dropdown" id="language-list">
+        <option value="Spanish">Spanish</option>
+        <option value="French">French</option>
+        <option value="Italian">Italian</option>
+        <option value="German">German</option>
+        <option value="Russian">Russian</option>
+        <option value="Chinese-Mandarin">Chinese (Mandarin)</option>
+        <option value="Chinese-Cantonese">Chinese (Cantonese)</option>
+        <option value="Japanese">Japanese</option>
+        <option value="Portugese">Portugese</option>
+        <option value="Finnish">Finnish</option>
+        <option value="Swedish">Swedish</option>
+        <option value="Dutch">Dutch</option>
+      </select>
+    </div>
+    <div class="phrases-container">
+      <h2>Phrases</h2>
+      <p>
+        We've pre-selected some useful phrases. To customize your translation
+        card with only the phrases you want, just check/uncheck the boxes below.
+      </p>
+      <h3>Phrases for the traveller with diabetes</h3>
+      <div>
+        <input type="checkbox" id="please-help" name="please-help" checked />
+        <label for="please-help">Please help me.</label>
       </div>
+      <div>
+        <input type="checkbox" id="i-have" name="i-have" checked />
+        <label for="i-have">I have diabetes.</label>
+      </div>
+      <div>
+        <input type="checkbox" id="i-have-t1" name="i-have-t1" />
+        <label for="i-have-t1">I have Type 1 diabetes.</label>
+      </div>
+      <div>
+        <input type="checkbox" id="i-have-t2" name="i-have-t2" />
+        <label for="i-have-t2">I have Type 2 diabetes.</label>
+      </div>
+      <div>
+        <input type="checkbox" id="feel-well" name="feel-well" />
+        <label for="feel-well">I feel unwell.</label>
+      </div>
+      <div>
+        <input type="checkbox" id="sugar-low" name="sugar-low" />
+        <label for="sugar-low">My blood sugar is low.</label>
+      </div>
+      <div>
+        <input type="checkbox" id="sugar-high" name="sugar-high" />
+        <label for="sugar-high">My blood sugar is high.</label>
+      </div>
+      <div>
+        <input type="checkbox" id="need-sugar" name="need-sugar" />
+        <label for="need-sugar">I need sugar quickly.</label>
+      </div>
+      <div>
+        <input type="checkbox" id="need-insulin" name="need-insulin" />
+        <label for="need-insulin">I need insulin.</label>
+      </div>
+      <div>
+        <input
+          type="checkbox"
+          id="need-insulin-syringes"
+          name="need-insulin-syringes"
+        />
+        <label for="need-insulin-syringes">I need syringes for insulin.</label>
+      </div>
+      <div>
+        <input type="checkbox" id="need-ambulance" name="need-ambulance" />
+        <label for="need-ambulance">I need an ambulance.</label>
+      </div>
+      <div>
+        <input type="checkbox" id="need-hospital" name="need-hospital" />
+        <label for="need-hospital">I need to go to hospital.</label>
+      </div>
+      <div>
+        <input type="checkbox" id="need-pharmacy" name="need-pharmacy" />
+        <label for="need-pharmacy"
+          >I need to go to the pharmacy. Where is the pharmacy?</label
+        >
+      </div>
+      <div>
+        <input type="checkbox" id="wear-pump" name="wear-pump" />
+        <label for="wear-pump">I use an insulin pump.</label>
+      </div>
+      <div>
+        <input type="checkbox" id="out-of-insulin" name="out-of-insulin" />
+        <label for="out-of-insulin">I do not have any insulin.</label>
+      </div>
+      <div>
+        <input
+          type="checkbox"
+          id="out-of-insulin-buy"
+          name="out-of-insulin-buy"
+        />
+        <label for="out-of-insulin-buy">Where can I buy insulin?</label>
+      </div>
+      <div>
+        <input
+          type="checkbox"
+          id="out-of-insulin-cost"
+          name="out-of-insulin-cost"
+        />
+        <label for="out-of-insulin-cost">What is the price of insulin?</label>
+      </div>
+    </div>
+    <div>
+      <h2>Include an Emergency Card?</h2>
+      <p>
+        Do you want to include an emergency card? It will include your name,
+        birth date, emergency contact person, and the number of the emergency
+        services contact in your country, where available (for example 911 in
+        the US, 999 in the UK). Please double check this number upon your
+        arrival, as many countries will have local services but no national
+        emergency contact number.
+      </p>
+      <div>
+        <input
+          type="checkbox"
+          id="emergency-card-yes"
+          name="emergency-card-yes"
+        />
+        <label for="oemergency-card-yes">Yes, please!</label>
+      </div>
+      <div>
+        <input
+          type="checkbox"
+          id="emergency-card-no"
+          name="emergency-card-no"
+        />
+        <label for="emergency-card-no">No, thank you.</label>
+      </div>
+      <div>
+        <input type="text" id="first-name" name="first-name" /><label
+          for="first-name"
+          >First Name</label
+        >
+      </div>
+      <div>
+        <input type="text" id="surname" name="surname" /><label for="surname"
+          >Surname/Last Name/Family Name</label
+        >
+      </div>
+      <div>
+        <input type="date" id="dob" name="dob" /><label for="dob"
+          >Date of Birth</label
+        >
+      </div>
+    </div>
   </body>
 </html>
