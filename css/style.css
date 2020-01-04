@@ -2,6 +2,11 @@ body {
   background-color: #b3efff;
 }
 
+input[type="text"] label {
+  display: block;
+  background-color: red;
+}
+
 h1,
 h2,
 h3,
@@ -9,4 +14,12 @@ h4,
 h5 {
   font-family: "Playfair Display", serif;
   color: #1c304a;
+}
+
+.show {
+  display: grid;
+}
+
+.hide {
+  display: none;
 }

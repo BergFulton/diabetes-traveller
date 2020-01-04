@@ -43,21 +43,21 @@
     <div class="dropdown-container">
       <h2>Please select the language of the place you'll be travelling to</h2>
       <select name="language-dropdown" id="language-list">
-        <option value="Spanish">Spanish</option>
-        <option value="French">French</option>
-        <option value="Italian">Italian</option>
-        <option value="German">German</option>
-        <option value="Russian">Russian</option>
-        <option value="Chinese-Mandarin">Chinese (Mandarin)</option>
-        <option value="Chinese-Cantonese">Chinese (Cantonese)</option>
-        <option value="Japanese">Japanese</option>
-        <option value="Portugese">Portugese</option>
-        <option value="Finnish">Finnish</option>
-        <option value="Swedish">Swedish</option>
-        <option value="Dutch">Dutch</option>
+        <option value="spanish">Spanish</option>
+        <option value="french">French</option>
+        <option value="italian">Italian</option>
+        <option value="german">German</option>
+        <option value="russian">Russian</option>
+        <option value="chinese-mandarin">Chinese (Mandarin)</option>
+        <option value="chinese-cantonese">Chinese (Cantonese)</option>
+        <option value="japanese">Japanese</option>
+        <option value="portugese">Portugese</option>
+        <option value="finnish">Finnish</option>
+        <option value="swedish">Swedish</option>
+        <option value="dutch">Dutch</option>
       </select>
     </div>
-    <div class="phrases-container">
+    <div class="phrases-container hide">
       <h2>Phrases</h2>
       <p>
         We've pre-selected some useful phrases. To customize your translation
@@ -173,58 +173,50 @@
         />
         <label for="emergency-card-no">No, thank you.</label>
       </div>
-      <div>
-        <input type="text" id="first-name" name="first-name" /><label
-          for="first-name"
-          >First Name</label
-        >
-      </div>
-      <div>
-        <input type="text" id="surname" name="surname" /><label for="surname"
-          >Surname/Last Name/Family Name</label
-        >
-      </div>
-      <div>
-        <input type="date" id="dob" name="dob" /><label for="dob"
-          >Date of Birth</label
-        >
-      </div>
-      <div>
-        My Prounouns Are:
-        <input type="checkbox" id="pronouns-she" name="pronouns-she" />
-        <label for="pronouns-she">She/Her/Hers</label>
-        <input type="checkbox" id="pronouns-he" name="pronouns-he" />
-        <label for="pronouns-he">He/Him/His</label>
-        <input type="checkbox" id="pronouns-they" name="pronouns-they" />
-        <label for="pronouns-they">They/Them/Theirs</label>
-        <input type="checkbox" id="pronouns-self" name="pronouns-self" />
-        <label for="pronouns-self"
-          ><input type="text" id="pronous-self-declare"
-        /></label>
-      </div>
-      <div>
-        <input
-          type="text"
-          id="emergency-contact"
-          name="emergency-contact"
-        /><label for="emergency-contact">Emergency Contact</label>
-      </div>
-      <div>
-        <input type="text" id="allergies" name="allergies" /><label
-          for="allergies"
-          >Allergies</label
-        >
-      </div>
-      <div>
-        <input type="text" id="religion" name="religion" /><label for="religion"
-          >Religion/Religious Observance</label
-        >
-      </div>
-      <div>
-        <input type="text" id="other" name="other" /><label for="other"
-          >Other important information (DNR, etc)</label
-        >
+      <div class="emergecy-card-data hide">
+        <div>
+          <label for="first-name">First Name</label>
+          <input type="text" id="first-name" name="first-name" />
+        </div>
+        <div>
+          <label for="surname">Surname/Last Name/Family Name</label>
+          <input type="text" id="surname" name="surname" />
+        </div>
+        <div>
+          <label for="dob">Date of Birth</label>
+          <input type="date" id="dob" name="dob" />
+        </div>
+        <div>
+          My Prounouns Are:
+          <input type="checkbox" id="pronouns-she" name="pronouns-she" />
+          <label for="pronouns-she">She/Her/Hers</label>
+          <input type="checkbox" id="pronouns-he" name="pronouns-he" />
+          <label for="pronouns-he">He/Him/His</label>
+          <input type="checkbox" id="pronouns-they" name="pronouns-they" />
+          <label for="pronouns-they">They/Them/Theirs</label>
+          <input type="checkbox" id="pronouns-self" name="pronouns-self" />
+          <label for="pronouns-self"
+            ><input type="text" id="pronous-self-declare"
+          /></label>
+        </div>
+        <div>
+          <label for="emergency-contact">Emergency Contact</label>
+          <input type="text" id="emergency-contact" name="emergency-contact" />
+        </div>
+        <div>
+          <label for="allergies">Allergies</label>
+          <input type="text" id="allergies" name="allergies" />
+        </div>
+        <div>
+          <label for="religion">Religion/Religious Observance</label>
+          <input type="text" id="religion" name="religion" />
+        </div>
+        <div>
+          <label for="other">Other important information (DNR, etc)</label>
+          <input type="text" id="other" name="other" />
+        </div>
       </div>
     </div>
+    <script src="scripts/scripts.js"></script>
   </body>
 </html>
